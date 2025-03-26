@@ -37,4 +37,5 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 #
 # Custom theme
 #
+gem "jekyll-remote-theme"
 gem "jekyll-theme-clean-blog"

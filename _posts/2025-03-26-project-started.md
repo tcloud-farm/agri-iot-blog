@@ -6,10 +6,9 @@ background: '/assets/images/20250326-bg.svg'
 author:  "たなべ"
 categories: Announcement
 ---
-<h2 class="section-heading">農業IoTプロジェクト、始まっています！</h2>
 
 
-こんにちは。クラウドファーム株式会社の代表、半農半ITの
+こんにちは。クラウドファーム株式会社の代表、半農半ITエンジニアの
 <a href="https://tcloud.farm/about/">たなべ
 </a>です。
 
@@ -25,7 +24,7 @@ categories: Announcement
 <h2 class="section-heading">どうやって進めている？</h2>
 
 まずは11月下旬に、実際に設置をする舟木農園さんにお邪魔して、現地視察をしました。
-<img class="img-fluid" src="/assets/images/20250326-03.jpg"/>
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20250326-03.jpg"/>
 
 
 12月にキックオフミーティングを行い、プロジェクトの進め方や、役割分担を決めました。
@@ -35,7 +34,7 @@ categories: Announcement
 プログラミングや電子工作なども初体験、というメンバーもいる中、みんなそれぞれ自主的に動いてくれています。
 
 進捗管理は、GitHubのプロジェクト機能を使って、タスク管理をしています。
-<img class="img-fluid" src="/assets/images/20250326-01.png"/>
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20250326-01.png"/>
 
 
 

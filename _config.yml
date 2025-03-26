@@ -30,13 +30,19 @@ author: cloudfarm Inc.
 
 # Build settings
 theme: jekyll-theme-clean-blog
+#theme: minima
+#remote_theme: pages-themes/cayman@v0.2.0
 markdown:           kramdown
 paginate:           5
 paginate_path:      "/posts/page:num/"
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+
+
+destination: docs
 
 # Exclude from processing.
 # The following items will not be processed, by default.
