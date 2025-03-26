@@ -4,7 +4,7 @@ title:  "農業IoTプロジェクトのブログ、始めます！"
 date:   2025-03-26 14:50:11 +0900
 background: '/assets/images/20250326-bg.svg'
 author:  "たなべ"
-categories: Announcement
+categories: News
 ---
 
 
