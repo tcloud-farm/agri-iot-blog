@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "農業IoTプロジェクトのブログ、始めます！"
-date:   2025-03-26 14:50:11 +0900
-background: '/assets/images/20250326-bg.svg'
+date:   2025-04-01 14:50:11 +0900
+background: '/assets/images/20250401-bg.svg'
 author:  "たなべ"
 categories: News
 ---
@@ -28,13 +28,15 @@ categories: News
 <h2 class="section-heading">どうやって進めているの？</h2>
 
 まず11月下旬、設置先となる舟木農園さんを訪問し、現地視察を行いました。
-<img class="img-fluid" src="/agri-iot-blog/assets/images/20250326-03.jpg"/>
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20250401-03.jpg"/>
 
 その後、12月にはキックオフミーティングを実施し、プロジェクトの進め方や役割分担を話し合いました。基本的には、学生さんの「やってみたいこと」をベースにメインの担当を決めていますが、学びの幅を広げてもらうために、主担当以外の分野にも積極的にチャレンジしてもらう「全員参加型」のスタイルを取っています。
 
 プログラミングや電子工作が初めてというメンバーもいますが、皆さん自発的に動いてくれていて、とても頼もしいです！
 
 進捗管理にはGitHubのプロジェクト機能を活用し、タスクを可視化しながら進めています。
-<img class="img-fluid" src="/agri-iot-blog/assets/images/20250326-01.png"/>
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20250401-01.png"/>
 
 今後もこのブログで、プロジェクトの様子を随時お届けしていきます。どうぞお楽しみに！
+
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20250401-02.jpg"/>

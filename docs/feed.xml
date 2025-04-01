@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://tcloud-farm.github.io//agri-iot-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://tcloud-farm.github.io//agri-iot-blog/" rel="alternate" type="text/html" /><updated>2025-03-27T10:13:55+09:00</updated><id>https://tcloud-farm.github.io//agri-iot-blog/feed.xml</id><title type="html">農業IoTプロジェクト 開発ブログ</title><subtitle>札幌市北区の「舟木農園」にて、2025年から使用する&lt;a href=&quot;https://tcloud.farm/agri-iot-2024/&quot;&gt;「自動灌水システム」を開発するプロジェクト&lt;/a&gt;です。 土壌水分をセンサーで計測し、自動で水をやる以外にも、環境データ（気温、湿度、日照など）を収集し、農家がスマホでリアルタイムに状況を把握できるようにします。</subtitle><author><name>cloudfarm Inc.</name></author><entry><title type="html">農業IoTプロジェクトのブログ、始めます！</title><link href="https://tcloud-farm.github.io//agri-iot-blog/news/2025/03/26/project-started.html" rel="alternate" type="text/html" title="農業IoTプロジェクトのブログ、始めます！" /><published>2025-03-26T14:50:11+09:00</published><updated>2025-03-26T14:50:11+09:00</updated><id>https://tcloud-farm.github.io//agri-iot-blog/news/2025/03/26/project-started</id><content type="html" xml:base="https://tcloud-farm.github.io//agri-iot-blog/news/2025/03/26/project-started.html"><![CDATA[<p>こんにちは。クラウドファーム株式会社 代表、半農半ITエンジニアの
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://tcloud-farm.github.io//agri-iot-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://tcloud-farm.github.io//agri-iot-blog/" rel="alternate" type="text/html" /><updated>2025-04-01T17:51:10+09:00</updated><id>https://tcloud-farm.github.io//agri-iot-blog/feed.xml</id><title type="html">農業IoTプロジェクト 開発ブログ</title><subtitle>札幌市北区の「舟木農園」にて、2025年から使用する&lt;a href=&quot;https://tcloud.farm/agri-iot-2024/&quot;&gt;「自動灌水システム」を開発するプロジェクト&lt;/a&gt;です。 土壌水分をセンサーで計測し、自動で水をやる以外にも、環境データ（気温、湿度、日照など）を収集し、農家がスマホでリアルタイムに状況を把握できるようにします。</subtitle><author><name>cloudfarm Inc.</name></author><entry><title type="html">農業IoTプロジェクトのブログ、始めます！</title><link href="https://tcloud-farm.github.io//agri-iot-blog/news/2025/04/01/project-started.html" rel="alternate" type="text/html" title="農業IoTプロジェクトのブログ、始めます！" /><published>2025-04-01T14:50:11+09:00</published><updated>2025-04-01T14:50:11+09:00</updated><id>https://tcloud-farm.github.io//agri-iot-blog/news/2025/04/01/project-started</id><content type="html" xml:base="https://tcloud-farm.github.io//agri-iot-blog/news/2025/04/01/project-started.html"><![CDATA[<p>こんにちは。クラウドファーム株式会社 代表、半農半ITエンジニアの
 <a href="https://tcloud.farm/about/">たなべ</a>
 です。</p>
 
@@ -13,13 +13,15 @@
 <h2 class="section-heading">どうやって進めているの？</h2>
 
 <p>まず11月下旬、設置先となる舟木農園さんを訪問し、現地視察を行いました。
-<img class="img-fluid" src="/agri-iot-blog/assets/images/20250326-03.jpg" /></p>
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20250401-03.jpg" /></p>
 
 <p>その後、12月にはキックオフミーティングを実施し、プロジェクトの進め方や役割分担を話し合いました。基本的には、学生さんの「やってみたいこと」をベースにメインの担当を決めていますが、学びの幅を広げてもらうために、主担当以外の分野にも積極的にチャレンジしてもらう「全員参加型」のスタイルを取っています。</p>
 
 <p>プログラミングや電子工作が初めてというメンバーもいますが、皆さん自発的に動いてくれていて、とても頼もしいです！</p>
 
 <p>進捗管理にはGitHubのプロジェクト機能を活用し、タスクを可視化しながら進めています。
-<img class="img-fluid" src="/agri-iot-blog/assets/images/20250326-01.png" /></p>
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20250401-01.png" /></p>
 
-<p>今後もこのブログで、プロジェクトの様子を随時お届けしていきます。どうぞお楽しみに！</p>]]></content><author><name>たなべ</name></author><category term="News" /><summary type="html"><![CDATA[こんにちは。クラウドファーム株式会社 代表、半農半ITエンジニアの たなべ です。]]></summary></entry></feed>
+<p>今後もこのブログで、プロジェクトの様子を随時お届けしていきます。どうぞお楽しみに！</p>
+
+<p><img class="img-fluid" src="/agri-iot-blog/assets/images/20250401-02.jpg" /></p>]]></content><author><name>たなべ</name></author><category term="News" /><summary type="html"><![CDATA[こんにちは。クラウドファーム株式会社 代表、半農半ITエンジニアの たなべ です。]]></summary></entry></feed>

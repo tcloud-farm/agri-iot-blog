@@ -36,16 +36,21 @@ article {
   line-height: 1.4 !important;
 }
 
-.post-preview h2 {
+.post-title {
   font-family: "Noto Sans JP", sans-serif !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
+  font-size: 30px !important;
 }
-.post-preview h3 {
-  font-family: "Noto Sans JP", sans-serif !important;
-}
-.post-preview h4 {
+
+.post-subtitle {
   font-family: "Noto Sans JP", sans-serif !important;
   font-weight: 100 !important;
+  font-size: 20px !important;
+}
+
+.post-meta {
+  font-family: "Noto Sans JP", sans-serif !important;
+  font-size: 16px !important;
 }
 
 /*# sourceMappingURL=custom.css.map */

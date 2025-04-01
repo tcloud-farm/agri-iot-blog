@@ -43,19 +43,19 @@ article {
   line-height: 1.4 !important;
 }
 
-.post-preview {
-  h2 {
-    font-family: $font-family-base;
-    font-weight: 300 !important;
-  }
-
-  h3 {
-    font-family: $font-family-base;
-  }
-
-  h4 {
-    font-family: $font-family-base;
-    font-weight: 100 !important;
-  }
+.post-title {
+  font-family: $font-family-base;
+  font-weight: 400 !important;
+  font-size: 30px !important;
 }
 
+.post-subtitle {
+  font-family: $font-family-base;
+  font-weight: 100 !important;
+  font-size: 20px !important;
+}
+
+.post-meta {
+  font-family: $font-family-base;
+  font-size: 16px !important;
+}
