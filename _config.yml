@@ -28,6 +28,10 @@ url: "https://tcloud-farm.github.io/" # the base hostname & protocol for your si
 #github_username:  jekyll
 author: cloudfarm Inc.
 
+
+# Add your google-analytics ID here to activate google analytics
+google_analytics: "G-1ZXSJXXS8F"
+
 # Build settings
 theme: jekyll-theme-clean-blog
 #theme: minima
@@ -52,7 +56,8 @@ destination: docs
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
+ - README.md
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
