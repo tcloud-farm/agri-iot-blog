@@ -5,7 +5,22 @@
 ## 概要
 GitHub Pagesを利用して、農業IoTプロジェクトの進捗をお伝えするブログです。
 
-## 記事の更新方法
+## 記事の更新手順概要
+1. 公開する日付のブランチを作成します。
+   - 例: `20250326`
+   - ブランチ名は、`YYYYMMDD`の形式で作成してください。
+   - 例: `20250326`
+   - ブランチ名は、英数字のみ使用してください。
+2. `_posts`フォルダに新しいMarkdownファイルを作成します。
+   - 作成のルールは、下記の「記事の作成手順」を参照してください。
+3. （オプション）localのRuby環境でJekyllでビルドして、表示を確認します。
+    ```shell
+    $ bundle exec jekyll serve
+    ```
+4. GitHubでプルリクエストを作成します。
+   - 実際の公開は、プルリクエストをレビュー後に田名辺がマージを行うことで公開されます。
+   
+## 記事の作成手順
 1. `_posts`フォルダに新しいMarkdownファイルを作成します。
    - ファイル名は、`YYYY-MM-DD-記事タイトル.md`の形式で作成してください。
    - 例: `2025-03-26-project-started.md`
@@ -47,7 +62,7 @@ $ bundle exec jekyll build
   - `bundle exec jekyll build`を実行すると、`docs`フォルダにビルドされたHTMLファイルが生成されます。このdocsフォルダが最終的に公開されるページです。
 
 
-## 公開方法
+## （参考）公開方法
 
 localビルド後にGitHubにpushすることで、GitHub Pagesに公開されます。
 ```shell
@@ -85,5 +100,4 @@ $ bundle exec jekyll serve
 - `bundle exec jekyll build`を実行すると、Jekyllが静的なHTMLファイルを生成します。これにより、GitHub Pagesにpushする準備が整います。
 - `bundle exec jekyll clean`を実行すると、ビルドされたファイルを削除します。これにより、クリーンな状態でビルドを行うことができます。
 
-GitHub Pagesにpushする前に、ローカルでビルドしたHTMLファイルを確認することができます。ローカルサーバーを起動して、`http://localhost:4000`にアクセスしてください。
-
+GitHub Pagesにpushする前に、ローカルでビルドしたHTMLファイルを確認することができます。ローカルサーバーを起動して、 [http://localhost:4000/agri-iot-blog/](http://localhost:4000/agri-iot-blog/) にアクセスしてください。
