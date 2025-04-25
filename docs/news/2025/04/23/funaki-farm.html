@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>
+        舟木農園訪問！ - 農業IoTプロジェクト 開発ブログ
+        
+    </title>
+
+    <meta name="description" content="こんにちは。農業IoTプロジェクトに参加させていただいています、北海道大学農学部生物環境工学科３年の中根進之介です。">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZXSJXXS8F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-1ZXSJXXS8F');
+    </script>
+
+    <link rel="stylesheet" href="/agri-iot-blog/assets/main.css">
+    <link rel="stylesheet" href="/agri-iot-blog/assets/css/custom.css">
+    <link rel="canonical" href="https://tcloud-farm.github.io//agri-iot-blog/news/2025/04/23/funaki-farm.html">
+    <link rel="alternate" type="application/rss+xml" title="農業IoTプロジェクト 開発ブログ" href="/agri-iot-blog/feed.xml">
+
+
+    <meta property="og:url" content="https://tcloud-farm.github.io//agri-iot-blog/news/2025/04/23/funaki-farm.html"/>
+    <meta property="og:title" content="舟木農園訪問！ - 農業IoTプロジェクト 開発ブログ"/>
+    <meta property="og:type" content="blog"/>
+    <meta property="og:site_name" content="農業IoTプロジェクト 開発ブログ"/>
+    <meta property="og:image" content="https://tcloud-farm.github.io//agri-iot-blog/assets/images/ogp.jpg"/>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="/agri-iot-blog/">
+        <img src="/agri-iot-blog/assets/images/CFLogoOnly.svg" style="width: 24px; margin-right: 5px;"/> 農業IoTプロジェクト 開発ブログ</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/agri-iot-blog/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://tcloud.farm/agri-iot-2024/" target="_blank">About</a>
+                </li>
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/agri-iot-blog/posts">記事一覧</a>
+                </li>
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="/agri-iot-blog/contact">Contact</a>-->
+<!--                </li>-->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- Page Header -->
+
+<header class="masthead" style="background-image: url('/agri-iot-blog/assets/images/20250401-bg.svg')">
+    
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>舟木農園訪問！</h1>
+                        
+                        <span class="meta">Posted by
+              <a href="#">中根進之介</a>
+              on 2025年04月23日 &middot; <span class="reading-time" title="Estimated read time">
+  
+   1 min  read </span>
+
+            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+
+                <p>こんにちは。農業IoTプロジェクトに参加させていただいています、北海道大学農学部生物環境工学科３年の中根進之介です。</p>
+
+<h2 id="はじめに">はじめに</h2>
+
+<p>4月12日と13日に、舟木農園を訪問してきました。
+今回の訪問の目的は、冬の間（11月〜3月）に開発していた自動潅水システムのプロトタイプを、実際の農場で動かしデータをクラウド化まで行うことです！
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20250413-04.png" />
+—</p>
+
+<h2 id="-具体的な活動内容">◆ 具体的な活動内容</h2>
+<p>今回の主な作業は次の4つです。</p>
+<ol>
+  <li>実地での配線作業</li>
+  <li>データのクラウド化に向けた準備</li>
+  <li>土壌水分センサの校正</li>
+  <li>水分特性曲線の実験結果の修正</li>
+</ol>
+
+<hr />
+
+<h4 id="1配線作業">1.配線作業</h4>
+<p>この作業は、同じく生物環境工学科3年の堅田一太君が担当。
+現場の電源とラズベリーパイゼロ、ポンプを接続し、実際に潅水制御に成功しました！
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20250413-03.png" /></p>
+
+<h4 id="2データのクラウド化に向けた準備">2.データのクラウド化に向けた準備</h4>
+<p>これは、北海道大学工学部情報エレクトロニクス学科4年の小関万喜さんが担当しました！
+得られたデータをクラウドで管理できるように、Google cloudの firebaseというクラウドにデータを送受信できるようにしました！
+マイコンからデータを送信できたときはとても興奮しました！
+マイコンからデータを受信することと，クラウドに挙げること、それぞれ個別にはできたので今後はそれらを組み合わせることが課題です！</p>
+
+<h4 id="3土壌水分センサの校正">3.土壌水分センサの校正</h4>
+<p>これは、私と同級生の石井旭君で取り組みました。
+現在、センサーは5つありますが、個体差が大きいため、それぞれを丁寧に校正しました。
+ただ、比較的安価なセンサーなので、ばらつきがあり、土壌に挿して測定した結果、期待通りの値が出ないことも。
+今後はその原因を探り、精度を上げる方法を検討していきます。</p>
+
+<h4 id="4水分特性曲線の実験結果の修正">4.水分特性曲線の実験結果の修正</h4>
+<p>こちらは同級生の遊佐拓実君が担当しました。
+この実験は、冬の間に北大農学部の土壌保全学研究室で、教授や修士の方の協力のもと実施したものです。詳細は後日、まとめます！
+今回、修士の方からいただいたアドバイスをもとに、結果の修正作業を行いました。</p>
+
+<hr />
+
+<h2 id="苗の育苗と気づき">苗の育苗と気づき</h2>
+<p>最後に、舟木さんから育苗中の苗を見せていただきました。
+中でも印象的だったのが、4月初旬の異常な暑さの影響で枯れてしまったトマトの苗です。
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20254013-02.png" />
+育苗に1か月以上かけていたのに、暑さへの対応が少し遅れただけでほぼ全滅…。
+作物の管理の重要性と、人の手だけで全てをカバーする難しさを痛感しました。
+だからこそ、私たちが開発している自動潅水システムが、農家さんの負担を減らし、より良い作物を育てる助けになると感じました。</p>
+
+<hr />
+
+<h2 id="最後に">最後に</h2>
+<p>今回の訪問では、目標としていた「プロトタイプの実装〜クラウド連携」までは達成できませんでした。
+ただ、現場に出ることでトラブルや課題も見つかり、確実に前進していると感じます。
+ちなみに、４月13日は強風で極寒であったとともに、小関さん、石井君の自転車は壊れ、田名辺さんのジンギスカンハウスはドアが飛ばされるなど、現場以外でもハプニング続きでした　笑
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20250413-01.png" />
+次回の訪問までに、今回できなかったことを改善していきたいです。
+最後まで読んでいただき、ありがとうございました！
+次回のブログもお楽しみに！</p>
+
+
+
+                <hr>
+
+                <div class="clearfix">
+
+                    
+                    <a class="btn btn-primary float-left" href="/agri-iot-blog/news/2025/04/01/project-started.html" data-toggle="tooltip" data-placement="top" title="農業IoTプロジェクトのブログ、始めます！">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+                    
+                    
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <ul class="list-inline text-center">
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; <a href="https://tcloud.farm/">cloudfarm Inc.</a> 2025</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/agri-iot-blog/assets/vendor/startbootstrap-clean-blog/js/scripts.js"></script>
+
+<script src="/agri-iot-blog/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZXSJXXS8F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1ZXSJXXS8F');
+</script>
+
+
+
+</body>
+
+</html>
