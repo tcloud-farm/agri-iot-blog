@@ -15,7 +15,7 @@ categories: News
 
 4月12日と13日に、舟木農園を訪問してきました。
 今回の訪問の目的は、冬の間（11月〜3月）に開発していた自動潅水システムのプロトタイプを、実際の農場で動かしデータをクラウド化まで行うことです！
-<img class="img-fluid" src="/agri-iot-blog/assets/images/20250413-04.png"/>
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20250413-04.jpg"/>
 ---
 
 
@@ -31,7 +31,7 @@ categories: News
 #### 1.配線作業
 この作業は、同じく生物環境工学科3年の堅田一太君が担当。
 現場の電源とラズベリーパイゼロ、ポンプを接続し、実際に潅水制御に成功しました！
-<img class="img-fluid" src="/agri-iot-blog/assets/images/20250413-03.png"/>
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20250413-03.jpg"/>
 
 
 #### 2.データのクラウド化に向けた準備
@@ -62,7 +62,7 @@ categories: News
 ## 苗の育苗と気づき
 最後に、舟木さんから育苗中の苗を見せていただきました。
 中でも印象的だったのが、4月初旬の異常な暑さの影響で枯れてしまったトマトの苗です。
-<img class="img-fluid" src="/agri-iot-blog/assets/images/20254013-02.png"/>
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20250413-02.jpg"/>
 育苗に1か月以上かけていたのに、暑さへの対応が少し遅れただけでほぼ全滅…。
 作物の管理の重要性と、人の手だけで全てをカバーする難しさを痛感しました。
 だからこそ、私たちが開発している自動潅水システムが、農家さんの負担を減らし、より良い作物を育てる助けになると感じました。
@@ -75,7 +75,7 @@ categories: News
 今回の訪問では、目標としていた「プロトタイプの実装〜クラウド連携」までは達成できませんでした。
 ただ、現場に出ることでトラブルや課題も見つかり、確実に前進していると感じます。
 ちなみに、４月13日は強風で極寒であったとともに、小関さん、石井君の自転車は壊れ、田名辺さんのジンギスカンハウスはドアが飛ばされるなど、現場以外でもハプニング続きでした　笑
-<img class="img-fluid" src="/agri-iot-blog/assets/images/20250413-01.png"/>
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20250413-01.jpg"/>
 次回の訪問までに、今回できなかったことを改善していきたいです。
 最後まで読んでいただき、ありがとうございました！
 次回のブログもお楽しみに！
