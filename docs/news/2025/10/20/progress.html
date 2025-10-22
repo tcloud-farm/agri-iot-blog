@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>
+        農業IoTプロジェクト：進捗報告！ - 農業IoTプロジェクト 開発ブログ
+        
+    </title>
+
+    <meta name="description" content="こんにちは！ 北海道大学で農業IoTプロジェクトに参加している中根進之介です。 今回はおよそ3か月ぶりの進捗報告として、この間の取り組みについてまとめます。">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZXSJXXS8F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-1ZXSJXXS8F');
+    </script>
+
+    <link rel="stylesheet" href="/agri-iot-blog/assets/main.css">
+    <link rel="stylesheet" href="/agri-iot-blog/assets/css/custom.css">
+    <link rel="canonical" href="https://tcloud-farm.github.io//agri-iot-blog/news/2025/10/20/progress.html">
+    <link rel="alternate" type="application/rss+xml" title="農業IoTプロジェクト 開発ブログ" href="/agri-iot-blog/feed.xml">
+
+
+    <meta property="og:url" content="https://tcloud-farm.github.io//agri-iot-blog/news/2025/10/20/progress.html"/>
+    <meta property="og:title" content="農業IoTプロジェクト：進捗報告！ - 農業IoTプロジェクト 開発ブログ"/>
+    <meta property="og:type" content="blog"/>
+    <meta property="og:site_name" content="農業IoTプロジェクト 開発ブログ"/>
+    <meta property="og:image" content="https://tcloud-farm.github.io//agri-iot-blog/assets/images/ogp.jpg"/>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="/agri-iot-blog/">
+        <img src="/agri-iot-blog/assets/images/CFLogoOnly.svg" style="width: 24px; margin-right: 5px;"/> 農業IoTプロジェクト 開発ブログ</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/agri-iot-blog/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://tcloud.farm/agri-iot-2024/" target="_blank">About</a>
+                </li>
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/agri-iot-blog/posts">記事一覧</a>
+                </li>
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="/agri-iot-blog/contact">Contact</a>-->
+<!--                </li>-->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- Page Header -->
+
+<header class="masthead" style="background-image: url('/agri-iot-blog/assets/images/20250401-bg.svg')">
+    
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>農業IoTプロジェクト：進捗報告！</h1>
+                        
+                        <span class="meta">Posted by
+              <a href="#">中根進之介</a>
+              on 2025年10月20日 &middot; <span class="reading-time" title="Estimated read time">
+  
+   1 min  read </span>
+
+            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+
+                <p>こんにちは！
+北海道大学で農業IoTプロジェクトに参加している中根進之介です。
+今回はおよそ3か月ぶりの進捗報告として、この間の取り組みについてまとめます。</p>
+
+<hr />
+
+<h2 id="取り組んだこと">取り組んだこと</h2>
+<ol>
+  <li>データのクラウド管理に向けた準備</li>
+  <li>水分センサの耐久性評価</li>
+  <li>センサマイコンの保護</li>
+  <li>水分特性曲線モデルの選択</li>
+</ol>
+
+<hr />
+
+<h4 id="1データのクラウド管理に向けた準備">1.データのクラウド管理に向けた準備</h4>
+<p>このプロジェクトでは、水分センサの値をクラウドに定期的に保存することで、家にいながら畑の水分状況を確認できる環境を目指しています。<br />
+これまでは、マイコンから一度PCを経由してクラウドに保存することはできていましたが、さらにPCを介さず直接クラウドに書き込むことを試みました。<br />
+初めはなかなかうまくいきませんでしたが、田名辺さんのアドバイスをいただきながら、無事にクラウドへの直接保存に成功しました。<br />
+開発を主に担ってくれた遊佐拓実くんは、<br />
+「クラウドへの書き込みは、ゼロをワイファイにつなぐ段階からつまづいて、思うように進まず、IoTを実装するにはハードとソフトの両方の知識をつけなければならない点が難しいと感じた。」と話してくれました。<br />
+今後は、cron/crontab等を活用して定期的にクラウドにデータを書き込めるよう準備を進めるとともに、そのクラウドのデータを実際に使う農家の方が直観的に理解できるように改良していく予定です。
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20251020-01.jpg" /></p>
+
+<h4 id="2水分センサの耐久性評価">2.水分センサの耐久性評価</h4>
+<p>このプロジェクトでは、トマトの灌水量を水分センサの値からPF値に変換し、その値に応じて制御することを目標としています。
+そのため、水分センサの正確性が非常に重要です。
+そこで、長期運用時にどの程度安定して値を測定できるか、誤差はどの程度生じるかを事前に確認しました。<br />
+実施内容：<br />
+•1か月間、試験用の鉢に水分センサを設置<br />
+•毎日水やりを行い、センサの値を観察<br />
+結果：<br />
+1か月間連続使用しても安定した値を計測できました。<br />
+今後はさらに長期的な影響や、畑の肥料による測定誤差についても調査していく予定です。
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20251020-04.jpg" /></p>
+
+<h4 id="3センサマイコンの保護">3.センサマイコンの保護</h4>
+<p>センサやマイコンは水に触れると故障する可能性があります。
+しかし、実際の運用では水に濡れることも想定されるため、水濡れによる故障を防ぐために保護加工を施しました。防水性や紫外線に対する耐性を考慮しタイル用の目地を用いました。
+これにより、屋外での長期運用でもマイコンやセンサが安定して動作する環境を整えることができました。<br />
+今後はさらに、より強度を上げていくことが課題です。
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20251020-02.jpg" /></p>
+
+<h4 id="4水分特性曲線モデルの選択">4.水分特性曲線モデルの選択</h4>
+<p>前回の土壌実験の記事の中で、水分特性曲線のモデルにはいくつか種類があり、どのモデルを採用するか決める必要があるということを触れました。<br />
+今回は、どのモデルも当てはまりも良かったため、今回の実験に協力していただいた濱本教授の論文で頻繁に使用されているvan Genunhtenモデルの式を採用しました。
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20251020-03.jpg" /></p>
+
+<hr />
+
+<h2 id="今後の展望">今後の展望</h2>
+<p>•	データの自動クラウド保存の実装<br />
+•	長期的なセンサの耐久性評価<br />
+•	肥料によるセンサ誤差の調査<br />
+•	センサ・マイコンの保護強化<br />
+これらを進めることで、実際に農園での実装に向けて準備をしていきます！！<br />
+最後まで読んでいただき、ありがとうございました！<br />
+次回のブログもお楽しみに！</p>
+
+
+
+                <hr>
+
+                <div class="clearfix">
+
+                    
+                    <a class="btn btn-primary float-left" href="/agri-iot-blog/news/2025/06/02/soil-experiment.html" data-toggle="tooltip" data-placement="top" title="土壌実験">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+                    
+                    
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <ul class="list-inline text-center">
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; <a href="https://tcloud.farm/">cloudfarm Inc.</a> 2025</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/agri-iot-blog/assets/vendor/startbootstrap-clean-blog/js/scripts.js"></script>
+
+<script src="/agri-iot-blog/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZXSJXXS8F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1ZXSJXXS8F');
+</script>
+
+
+
+</body>
+
+</html>
