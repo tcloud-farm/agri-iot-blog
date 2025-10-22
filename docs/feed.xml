@@ -1,4 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://tcloud-farm.github.io//agri-iot-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://tcloud-farm.github.io//agri-iot-blog/" rel="alternate" type="text/html" /><updated>2025-06-04T22:08:50+09:00</updated><id>https://tcloud-farm.github.io//agri-iot-blog/feed.xml</id><title type="html">農業IoTプロジェクト 開発ブログ</title><subtitle>札幌市北区の「舟木農園」にて、2025年から使用する&lt;a href=&quot;https://tcloud.farm/agri-iot-2024/&quot;&gt;「自動灌水システム」を開発するプロジェクト&lt;/a&gt;です。 土壌水分をセンサーで計測し、自動で水をやる以外にも、環境データ（気温、湿度、日照など）を収集し、農家がスマホでリアルタイムに状況を把握できるようにします。</subtitle><author><name>cloudfarm Inc.</name></author><entry><title type="html">土壌実験</title><link href="https://tcloud-farm.github.io//agri-iot-blog/news/2025/06/02/soil-experiment.html" rel="alternate" type="text/html" title="土壌実験" /><published>2025-06-02T14:50:11+09:00</published><updated>2025-06-02T14:50:11+09:00</updated><id>https://tcloud-farm.github.io//agri-iot-blog/news/2025/06/02/soil-experiment</id><content type="html" xml:base="https://tcloud-farm.github.io//agri-iot-blog/news/2025/06/02/soil-experiment.html"><![CDATA[<p>こんにちは！<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://tcloud-farm.github.io//agri-iot-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://tcloud-farm.github.io//agri-iot-blog/" rel="alternate" type="text/html" /><updated>2025-10-22T11:14:51+09:00</updated><id>https://tcloud-farm.github.io//agri-iot-blog/feed.xml</id><title type="html">農業IoTプロジェクト 開発ブログ</title><subtitle>札幌市北区の「舟木農園」にて、2025年から使用する&lt;a href=&quot;https://tcloud.farm/agri-iot-2024/&quot;&gt;「自動灌水システム」を開発するプロジェクト&lt;/a&gt;です。 土壌水分をセンサーで計測し、自動で水をやる以外にも、環境データ（気温、湿度、日照など）を収集し、農家がスマホでリアルタイムに状況を把握できるようにします。</subtitle><author><name>cloudfarm Inc.</name></author><entry><title type="html">農業IoTプロジェクト：進捗報告！</title><link href="https://tcloud-farm.github.io//agri-iot-blog/news/2025/10/20/progress.html" rel="alternate" type="text/html" title="農業IoTプロジェクト：進捗報告！" /><published>2025-10-20T14:50:11+09:00</published><updated>2025-10-20T14:50:11+09:00</updated><id>https://tcloud-farm.github.io//agri-iot-blog/news/2025/10/20/progress</id><content type="html" xml:base="https://tcloud-farm.github.io//agri-iot-blog/news/2025/10/20/progress.html"><![CDATA[<p>こんにちは！
+北海道大学で農業IoTプロジェクトに参加している中根進之介です。
+今回はおよそ3か月ぶりの進捗報告として、この間の取り組みについてまとめます。</p>
+
+<hr />
+
+<h2 id="取り組んだこと">取り組んだこと</h2>
+<ol>
+  <li>データのクラウド管理に向けた準備</li>
+  <li>水分センサの耐久性評価</li>
+  <li>センサマイコンの保護</li>
+  <li>水分特性曲線モデルの選択</li>
+</ol>
+
+<hr />
+
+<h4 id="1データのクラウド管理に向けた準備">1.データのクラウド管理に向けた準備</h4>
+<p>このプロジェクトでは、水分センサの値をクラウドに定期的に保存することで、家にいながら畑の水分状況を確認できる環境を目指しています。<br />
+これまでは、マイコンから一度PCを経由してクラウドに保存することはできていましたが、さらにPCを介さず直接クラウドに書き込むことを試みました。<br />
+初めはなかなかうまくいきませんでしたが、田名辺さんのアドバイスをいただきながら、無事にクラウドへの直接保存に成功しました。<br />
+開発を主に担ってくれた遊佐拓実くんは、<br />
+「クラウドへの書き込みは、ゼロをワイファイにつなぐ段階からつまづいて、思うように進まず、IoTを実装するにはハードとソフトの両方の知識をつけなければならない点が難しいと感じた。」と話してくれました。<br />
+今後は、cron/crontab等を活用して定期的にクラウドにデータを書き込めるよう準備を進めるとともに、そのクラウドのデータを実際に使う農家の方が直観的に理解できるように改良していく予定です。
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20251020-01.jpg" /></p>
+
+<h4 id="2水分センサの耐久性評価">2.水分センサの耐久性評価</h4>
+<p>このプロジェクトでは、トマトの灌水量を水分センサの値からPF値に変換し、その値に応じて制御することを目標としています。
+そのため、水分センサの正確性が非常に重要です。
+そこで、長期運用時にどの程度安定して値を測定できるか、誤差はどの程度生じるかを事前に確認しました。<br />
+実施内容：<br />
+•1か月間、試験用の鉢に水分センサを設置<br />
+•毎日水やりを行い、センサの値を観察<br />
+結果：<br />
+1か月間連続使用しても安定した値を計測できました。<br />
+今後はさらに長期的な影響や、畑の肥料による測定誤差についても調査していく予定です。
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20251020-04.jpg" /></p>
+
+<h4 id="3センサマイコンの保護">3.センサマイコンの保護</h4>
+<p>センサやマイコンは水に触れると故障する可能性があります。
+しかし、実際の運用では水に濡れることも想定されるため、水濡れによる故障を防ぐために保護加工を施しました。防水性や紫外線に対する耐性を考慮しタイル用の目地を用いました。
+これにより、屋外での長期運用でもマイコンやセンサが安定して動作する環境を整えることができました。<br />
+今後はさらに、より強度を上げていくことが課題です。
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20251020-02.jpg" /></p>
+
+<h4 id="4水分特性曲線モデルの選択">4.水分特性曲線モデルの選択</h4>
+<p>前回の土壌実験の記事の中で、水分特性曲線のモデルにはいくつか種類があり、どのモデルを採用するか決める必要があるということを触れました。<br />
+今回は、どのモデルも当てはまりも良かったため、今回の実験に協力していただいた濱本教授の論文で頻繁に使用されているvan Genunhtenモデルの式を採用しました。
+<img class="img-fluid" src="/agri-iot-blog/assets/images/20251020-03.jpg" /></p>
+
+<hr />
+
+<h2 id="今後の展望">今後の展望</h2>
+<p>•	データの自動クラウド保存の実装<br />
+•	長期的なセンサの耐久性評価<br />
+•	肥料によるセンサ誤差の調査<br />
+•	センサ・マイコンの保護強化<br />
+これらを進めることで、実際に農園での実装に向けて準備をしていきます！！<br />
+最後まで読んでいただき、ありがとうございました！<br />
+次回のブログもお楽しみに！</p>]]></content><author><name>中根進之介</name></author><category term="News" /><summary type="html"><![CDATA[こんにちは！ 北海道大学で農業IoTプロジェクトに参加している中根進之介です。 今回はおよそ3か月ぶりの進捗報告として、この間の取り組みについてまとめます。]]></summary></entry><entry><title type="html">土壌実験</title><link href="https://tcloud-farm.github.io//agri-iot-blog/news/2025/06/02/soil-experiment.html" rel="alternate" type="text/html" title="土壌実験" /><published>2025-06-02T14:50:11+09:00</published><updated>2025-06-02T14:50:11+09:00</updated><id>https://tcloud-farm.github.io//agri-iot-blog/news/2025/06/02/soil-experiment</id><content type="html" xml:base="https://tcloud-farm.github.io//agri-iot-blog/news/2025/06/02/soil-experiment.html"><![CDATA[<p>こんにちは！<br />
 農業IoTプロジェクトに参加しております中根進之介です。今回は前回のブログの中でも少し触れた冬の期間に行っていた、土壌実験を紹介します。</p>
 
 <p>土壌実験は、北海道大学農学部土壌保全学研究室の濱本昌一郎教授、当時修士2年の小林徹平さんに協力していただき、トマトの栽培で使用する土壌の水分特性曲線を求めました。</p>
